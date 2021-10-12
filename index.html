@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Emre Özden</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico">
+        
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!--Mobile-->
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+
+    
+
+    
+    </head>
+    <body>
+     
+    <div class="top-container">
+      <header>  
+        <nav id="navbar">
+       <ul> 
+         <li><a href="#about">About Me</a></li> 
+         <li><a href="#skills">My Skills</a></li> 
+         <li><a href="#comments">Comments</a></li> 
+         <li><a href="#contact">Contact Me</a></li> 
+       </ul> 
+     </nav> 
+    
+      </header>
+        <img class="top-cloud" src="images/cloud.png" alt="topcloud-img">
+        <h1>I'm Emre.</h1>
+        <h2>a programmer.</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="botcloud-img">
+        <img src="images/mountain.png" alt="mountain-img">
+        <section id="about">
+    </div>
+      
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/emre.png" alt="emre-img" width="200" height="200">
+          <h2>Hello!</h2>
+          <p>I am a Web Developer. I ❤️ coding, cosplay and playing video games.</p>
+        </div>
+      </section>
+      <section id="skills">
+
+        <hr class="dotted">
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="designGif-1" src="https://media.giphy.com/media/d8d7kW0JUCUDwHpDsk/source.gif" alt="">
+            <h3>Design & Development</h3>
+            <p>Junior software developer specializing in JavaScript and C# language.
+              I am positive, ambitious and creative. I'm a mechanical engineering graduate however I am a person which have many goals and who takes big steps for these goals. Therefore, I chose to become a software developer instead of mechanical engineer. I went to .NET course in 2019. I want to improve my skills in Web & Mobile Development. I’m very keen to learn.</p>
+          </div>
+          <div class="skill-row">
+            <img class="designGif-2" src="https://media3.giphy.com/media/UoLt6Tm8wlSnWGfSFs/giphy.gif" alt="">
+            <h3>Competetive Gamer</h3>
+            <p>Playing video games is precious to me. These activities enhanced my imagination, creativity, story-telling capabilities and problem solving skills. I am thankful for that.</p>
+          </div>
+          <br>
+          <div class="skill-row">
+            <img class="designGif-3" src="https://media.giphy.com/media/VGQr1BVSTI2IDMac9u/source.gif" alt="">
+            <h3>Cosplay, Musical Instruments, Acting & Riding
+            </h3>
+            <p>I've started in 2015 and have several achievements like being 1st and 2nd in many competitions. In addition to cosplay, horse riding, playing harmonica and guitar, doing sports (crossfit & martial arts) and acting (had roles in some TV shows)</p>
+          </div>
+           
+          <div class="photo-row">
+            <h3><i>(Some of My Cosplay Photos)</i></h3>
+            <img class="skills-1" src="images/Skills1.jpg"  alt="skills1">
+            <img class="skills-2" src="images/Skills7.jpg" alt="skills2">
+            <br>
+            <img class="skills-3" src="images/Skills2.jpg"  alt="skills3">
+            <img class="skills-4" src="images/Skills6.jpg"  alt="skills4 ">
+          </div>
+        </div>
+
+      </section>
+      
+        <hr class="dotted">
+        <section id="comments">
+        <br>
+        <br>
+
+        <footer class="contact-me">
+              <div class="container">
+              <h2 class="text-center heading-medium">Comments</h2>
+                <div class="form-group">        
+
+                  
+                </div>
+                
+                <div class="form-group">
+
+                <section id="app">
+                  <div class="containerComment">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="comment">
+                      <p v-for="items in item" v-text="items"></p>
+                        </div><!--End Comment-->
+                        </div><!--End col -->
+                        </div><!-- End row -->
+                    <div class="row">
+                      <div class="col-6">
+
+                        <label for="name">Name:</label>
+                        <input name="name" id="bodyText" type="text" class="input form-control" rows="5" placeholder="Enter your name" v-model="newItemName" @keyup.enter="addItem()"></input>
+
+                        <label for="message">Add Comment: </label>
+                        <textarea name="message" id="bodyText" type="text" class="input form-control" rows="5" placeholder="Write a comment" v-model="newItemComment" @keyup.enter="addItem()"></textarea>
+                        <button v-on:click="addItem()" id="addComment" class='btn_ContactMe primaryContained float-right' type="submit">Add Comment</button>
+                      </div><!-- End col -->
+                    </div><!--End Row -->
+                  </div><!--End Container -->
+                </section><!-- end App -->
+              </div>
+
+
+
+
+              </div>
+
+              <div class="mid-container">
+              </div>
+
+                <br>
+                <hr class="dotted">
+              </section>
+        
+        <div class="contact-me">
+          <section id="contact">
+          <h2>Get In Touch</h2>
+          <h3 class="bottom-info">If you want to work with passionate, colorful & hard-working person! ^^</h3>          
+          <a class="btn_ContactMe" href="mailto:emredozden@gmail.com">Send Mail</a>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+    </section>
+
+      <div class="bottom-container">
+        <a class="footer-link1" href="https://www.linkedin.com/in/emreozden/"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a class="footer-link2" href="https://github.com/eonkaira"><i class="fab fa-github"></i> Github</a>
+        <p class="footer-text">© 2021 Emre Özden.</p>
+      </div>
+
+  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+     <script src="/js/main.js"></script> 
+    </body>
+</html>
